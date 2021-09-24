@@ -85,7 +85,8 @@ Archivos importantes
     Contiene todas las dependencias que contiene el proyecto.
 
     main.ts
-    Arranca toda la aplicación. Importa las librerías de Angular. Llama al módulo principal que va a arrancar la aplicación, que por defecto es AppModule.
+    Arranca toda la aplicación. Importa las librerías de Angular. Llama al módulo principal que va a arrancar
+	la aplicación, que por defecto es AppModule.
 
     node_modules
     Maneja las dependencias que se instalen en la aplicación
@@ -265,7 +266,8 @@ Al crearlo, se debe elegir el tipo de activaciones en las que se va a dejar pasa
 	ng serve -o         Abre en el navegador el proyecto, sin -o sólo indica 
                         la dirección en el localhost a la cual se accede manualmente.
 	ng build (--prod)	Crea los archivos en modo desarrollo o producción
-                        para poder mondarlo en un servidor. Crea una carpeta dist, donde se guardan los archivos necesarios para montar la página.
+                        para poder mondarlo en un servidor. Crea una carpeta dist, donde se guardan
+						los archivos necesarios para montar la página.
 	--skipTests		    Al crear un componente, si se le indica lo anterior,
                         se omiten los archivos de testing.
 
