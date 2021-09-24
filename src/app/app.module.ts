@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PanelModule } from './panel/panel.module';
 import { PortalModule } from './portal/portal.module';
 import { AuthModule } from './auth/auth.module';
+import { HttpClientModule } from '@angular/common/http';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     PanelModule,
     PortalModule,
-    AuthModule
+    AuthModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

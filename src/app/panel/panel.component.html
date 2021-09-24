@@ -1,3 +1,32 @@
-<p>Este será el contenedor del panel completo</p>
+<div class="wrapper">
+    <nav id="siderbar">
+        <div class="sidebar-header">
+            <h3>Hackademy</h3>
+        </div>
+        <ul class="list-unstyled components"></ul>
+            <p>Bienvenidos</p>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/panel">Dashboard</a></li>
+            <li routerLinkActive="active"><a routerLink="/panel/profile">Perfil</a></li>
+        <li>
+            <a href="#userSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Usuarios</a>
+            <ul class="collapse list-unstyled" id="userSubmenu">
+                <li routerLinkActive="active"><a routerLink="/panel/users">Ver usuarios</a></li>
+            </ul>
+        </li>
+    </nav>
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-info" (click)="toggleSidebar()">
+                    <i class="fas fa-align-left"></i>
+                    <span></span>
+                </button>
 
-<router-outlet></router-outlet>
+                <button class="btn btn-danger" (click)="logout()">Cerrar sesión</button>
+            </div>
+        </nav>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
