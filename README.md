@@ -92,7 +92,8 @@ Archivos importantes
     Maneja las dependencias que se instalen en la aplicación
 
     .gitignore
-    Crea el archivo que le indica a GitHub que archivos no va a subir e ignorará los cambios que hagan en ellos.
+    Crea el archivo que le indica a GitHub que archivos no va a subir e ignorará los cambios
+	que hagan en ellos.
 
     README.md
     Intrucciones sobre Angular y las específicas del proyecto
@@ -100,7 +101,6 @@ Archivos importantes
     angular.json
     Es el corazón del proyecto, por lo que contiene todos los servicios y herramientas que se utilizarán.
     Se puede cambiar el prefijo de los componentes en está parte, por defecto tienen el prefijo APP
-
 
 
                 			C O M P O N E N T E S
